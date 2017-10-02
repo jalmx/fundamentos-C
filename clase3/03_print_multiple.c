@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
 
 	int valor1 = 4;
 	int valor2 = 8;

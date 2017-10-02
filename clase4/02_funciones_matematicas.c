@@ -4,7 +4,7 @@
 int main(void) {
 	
 	int valorAbsolutoEntero = fabs(-18); // retorna el valor absulo del argumento
-	float valorAbsolutoFlotante = fabs(-4.7); // retorna el valor absulo del argumento
+	float valorAbsolutoFlotante = fabs(-4.7); // retorna el valor absoluto del argumento
 		
 	printf("%d\n", valorAbsolutoEntero);
 	printf("%f\n", valorAbsolutoFlotante);
@@ -14,7 +14,7 @@ int main(void) {
 	printf("e elevado a la %d: %f \n",x, exponente);
 	
 	float valor = 16.6;
-	float raiz = sqrt(valor); //sqrt calcula la raiz cuadra del argumento
+	float raiz = sqrt(valor); //sqrt calcula la raiz cuadrada del argumento
 	
 	printf("La raiz cuadrada de %f es: %f\n", valor, raiz);
 	

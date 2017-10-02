@@ -5,8 +5,8 @@
 int main(void) {
 	// SENO - COSENO - TANGENTE -> el argumento debe estar en **radianes**
 	//tambien existen -> arc seno, arc cos, arc tan, seno hip, cos hip y tan hip
-	float PI = 3.141592; //valor de PI
-	int angulo = 90;
+	const float PI = 3.141592; //valor de PI
+	int angulo = 30;
 	//primero el angulo se debe convertir a radianes
 	double seno = sin((PI * angulo) / 180); //calculo el seno del angulo
 	double coseno = cos((PI * angulo) / 180); //calculo el coseno del angulo

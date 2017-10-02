@@ -11,7 +11,7 @@ int main() {
 	if(caracter == 'a'){
 		printf("Diste una %c", caracter);
 	}else{
-		printf("Diste la letra %c", caracter);
+		printf("Diste otra letra %c", caracter);
 	}
 	
 	return 0;
