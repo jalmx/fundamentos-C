@@ -37,7 +37,7 @@ if (condicion_verdadera){
 }else{
 	//De lo contrario se ejecuta este bloque de código
 }
-
+```
 - Formato (printf("texto"))
 
 ```c
