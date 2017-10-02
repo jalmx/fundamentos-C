@@ -5,7 +5,7 @@ int main(void) {
 	como se puede nombrar una variable 
 	(NO comenzar con numeros ni signos)
 	*/
-	int nacimiento = 1989; 
+	int nacimiento = 1999;
 	int hoy =  2017;
 	
 	int edad = hoy - nacimiento;
