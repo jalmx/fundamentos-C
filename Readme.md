@@ -50,7 +50,7 @@ printf("Recibe un valor entero %d, recibe un valor flotante %f, recibe un valor 
 ```c
 #include <math.h> //importo la libreria de funciones matematicas
 
-double seno = sin((PI * angulo) / 180); //calculo el seno del angulo
+	double seno = sin((PI * angulo) / 180); //calculo el seno del angulo
 	double coseno = cos((PI * angulo) / 180); //calculo el coseno del angulo
 	double tangente = tan((PI * angulo) / 180); //calculo la tangente de
 ```
@@ -58,7 +58,7 @@ double seno = sin((PI * angulo) / 180); //calculo el seno del angulo
 - Funciones matematicas
 
 ```c
-int valorAbsolutoEntero = fabs(-18); // retorna el valor absulo del argumento
+	int valorAbsolutoEntero = fabs(-18); // retorna el valor absulo del argumento
 	float valorAbsolutoFlotante = fabs(-4.7); // retorna el valor absulo del argumento
 		
 	printf("%d\n", valorAbsolutoEntero);
