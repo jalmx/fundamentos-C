@@ -4,7 +4,7 @@ int main(void) {
 	int eleccion;
 	int a, b, resultado;
 	
-	for(;;){ //hago el ciclo infinito
+	for( ;/*no tienen tope*/; ){ //hago el ciclo infinito
 		
 		printf("Calculadora:\n1)sumar\n2)restar\n3)salir\n");
 		scanf("%d",&eleccion);
@@ -29,10 +29,8 @@ int main(void) {
 				printf("Saliendo del programa, gracias por su visita");
 				break;//rompo el ciclo
 			}
-			
 		}
 	}
-	
 	
 	return 0;
 }

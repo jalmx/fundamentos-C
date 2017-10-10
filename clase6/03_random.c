@@ -7,7 +7,6 @@ int main(void) {
 		printf("valor aleatorio %d\n", rand());	
 	}
 	
-	
 	return 0;
 }
 

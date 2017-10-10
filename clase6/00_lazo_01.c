@@ -16,8 +16,8 @@ int main(void) {
 	}
 	
 	printf("\nImpresion del 9 al 0\n");
-	for(int contador2 = 9; contador2 >= 0; contador2--){//decremento
-		printf("valor %d\n",contador2);
+	for(float contador2 = 9; contador2 >= 0; contador2--){//decremento
+		printf("valor %f\n",(contador2+3));
 	}
 	
 	return 0;

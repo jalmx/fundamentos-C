@@ -2,7 +2,7 @@
 
 int main(int argc, char *argv[]) {
 	
-	for(int x=0; x<50; x++){
+	for(int x=0; x<10000; x++){
 		printf("******\n");
 		printf("*******\n");
 		printf("********\n");
