@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
 	
 	int arr[4] ; /*se declara array indicando su espacio total, 
 					con las posiciones del 0 al 9*/
