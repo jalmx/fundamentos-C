@@ -1,43 +1,60 @@
 #include <stdio.h>
 
-#define GRAVEDAD 9.81f
+#define GRAVEDAD 9.81f //variables globales
 
-#define opcionMasa 1
-#define opcionAceleracion 2
+#define OPCION_MASA 1 //variables globales
+#define OPCION_ACELERACION 2 //variables globales
 
-void mensajeBienvenida(){
+void mensajeBienvenida(){	
 	printf("Calculadora cientifica para calcular Segunda Ley de Newton\n");
 }
 void mensajeResultado(double resultado){
-	printf("La fuerza resultante es: %lf\n", resultado);
+	printf("La fuerza resultante es: %.2lf\n", resultado);
 }
 double fuerzaGravedad(double masa){
 	return masa * GRAVEDAD;
 }
-
 double fuerza(double masa, double aceleracion){
 	return masa * aceleracion;
 }
 
+double verificarGravedad(){
+	int opcion = 0;
+	const int si = 1;
+	printf("La Aceleracion es igual a la Gravedad\? \t1)SI\t2)NO: ");
+	scanf("%d", &opcion);
+	if(opcion == si){
+		return GRAVEDAD;	
+	}else{
+		return 0.0;
+	}
+}
 double solicitudDato(int opcion){
+	double gravedad;
 	double valor = 0.0;
 	switch(opcion){
-	case opcionMasa:
+	case OPCION_MASA:
 		printf("Dar valor de la masa: ");
 		scanf("%lf", &valor);
 		break;
-	case opcionAceleracion:
-		printf("Dar valor de la aceleracion: ");
-		scanf("%lf", &valor);
+	case OPCION_ACELERACION:
+		gravedad = verificarGravedad();
+		if(gravedad != GRAVEDAD){
+			printf("Dar valor de la aceleracion: ");
+			scanf("%lf", &valor);	
+		}else{
+			valor = gravedad;
+		}
 		break;
 	}
 	return valor;
 }
+
 double calcularFuerza(){
 	double masa = 0.0;
 	double aceleracion = 0.0;
-	masa = solicitudDato(opcionMasa);
-	aceleracion = solicitudDato(opcionAceleracion);
+	masa = solicitudDato(OPCION_MASA);
+	aceleracion = solicitudDato(OPCION_ACELERACION);
 	
 	return fuerza(masa, aceleracion);
 }
