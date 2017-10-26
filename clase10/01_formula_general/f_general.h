@@ -1,5 +1,4 @@
 #include <math.h>
-#include <stdio.h>
 
 double raiz(double a, double b, double c){
 	double operacion = pow(b, 2) - (4 * a * c);	

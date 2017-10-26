@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "lib.h" //importo mi libreria
+#include "mi_libreria.h"//en clase
 
 int main(int argc, char *argv[]) {
 	
@@ -15,7 +16,8 @@ int main(int argc, char *argv[]) {
 	printf("resta %.2f\n", res);
 	printf("multiplicacion %.2f\n", mul);
 	printf("division %.2f\n", div);
-	
+
+	gatitos();
 	return 0;
 }
 
